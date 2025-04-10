@@ -11,5 +11,6 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   integrations: [svelte()],
+  output: 'server',
   adapter: netlify()
 });
