@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+    /* --color-background-primary: #181926; */
+    --color-background-primary: #1d1d20;
+    --color-normal: white;
+    --color-accent: #a9ebff;
+    --color-muted: #989898;
+    --color-faint: #6c728d;
+}
+
+html {
+    font: Inter;
+}
+
+h3 {
+    @apply uppercase text-sm font-bold text-white/35 mb-4;
+}
+
+@layer components {
+    h1 {
+        @apply font-semibold text-5xl;
+    }
+    .badge {
+        @apply flex items-center px-1 py-[2px] mr-1 mb-1 rounded-lg bg-[#58585833] text-muted focus:text-normal/75 hover:text-normal/75 transition;
+    }
+    a {
+        @apply outline-none transition;
+    }
+    a:hover, a:focus {
+        color: var(--color-accent);
+    }
+}
