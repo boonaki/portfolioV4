@@ -1,6 +1,7 @@
 ---
 import Navbar from '../components/Navbar.astro'
 import '../styles/global.css'
+import Stars from "@assets/star_bg.png";
 // const { title, description, image = "/default-social.jpg" } = Astro.props;
 const { title = "Josh Durrett - Software Engineer" } = Astro.props;
 ---
@@ -20,6 +21,7 @@ const { title = "Josh Durrett - Software Engineer" } = Astro.props;
 	</head>
 	<body class="w-full flex flex-col items-center">
 		<Navbar />
+		<img src={Stars.src} class="-z-[1] fixed h-full w-full object-cover" />
 		<slot />
 		<footer class="w-full max-w-[700px] p-8 text-sm text-muted/35">
 			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
