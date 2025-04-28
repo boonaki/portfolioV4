@@ -28,6 +28,9 @@ h3 {
     a {
         @apply outline-none transition lg:hover:text-accent focus:text-accent;
     }
+    .platform {
+        @apply mr-1 px-2 py-1 bg-faint/50 rounded-lg mb-1;
+    }
     /* a:hover, a:focus {
         color: var(--color-accent);
     } */
